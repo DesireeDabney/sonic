@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonic Character Guessing Game</title>
+  <link rel="icon" type="image/x-icon" href="emerald.png"> <!--put img here--> 
+  <link rel="stylesheet" href="styles.css">
+  
+<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+</head>
+
+<body>
+  
+  <div class="container">
+    <h1>Guess the Sonic Character</h1>
+    <p>I'm thinking of a sonic character. Can you guess it?</p>
+    <div id="winimg"></div> <!--place the win image here-->
+    <div class="game">
+      <input type="text" id="guess" placeholder="Enter your guess" >
+      <div class="tooltip">❔
+        <span class="tooltiptext">Characters: <br>
+            Knuckles, Eggman <br>
+            Shadow, Rouge <br>
+            Silver, Blaze <br>
+            Sonic, Tails <br>  
+            Cream, Amy  <br>
+           
+            <!--Alternate list
+            <li>Knuckles</li> 
+            <li>Eggman</li>
+            <li>Shadow</li>
+            <li>Rouge</li>
+            <li>Silver</li>
+            <li>Blaze</li>
+            <li>Sonic</li>
+            <li>Tails</li>  
+            <li>Amy</li>-->
+          
+        </span>
+      </div>
+      <p id="feedback"></p> <!--feedback for game/empty guesses-->
+    </div>
+ </div>
+    
+  
+ <div class="c2">
+  <div>
+  <button id="submit" onclick="checkGuess()">Submit Guess</button>
+  <button onclick="resetGame()">Play Again</button>
+  <button id="hint" onclick="getHint()">Hint</button>
+</div>
+<p>SCORE: </p><img src="sonicring.png" style="height: 20px;"><span id="wins">0</span><!--maybe-->
+</div>
+
+  <script src="sonic.js"></script>
+</body>
+</html>
+
