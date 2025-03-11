@@ -111,32 +111,32 @@ function displayImage(randomName) {
 
 function getHint() {
   feedback.style.color = "gray";
-  if (randomName === "sonic") {
-    document.getElementById("feedback").innerHTML = "Blue!";
+  if (randomName === "sonic" || "silver" || "amy" || "shadow") {
+    document.getElementById("feedback").innerHTML = "Hedgehog!";
   }
   if (randomName === "knuckles") {
-    document.getElementById("feedback").innerHTML = "Red!";
+    document.getElementById("feedback").innerHTML = "Echidna!";
   }
   if (randomName === "tails") {
-    document.getElementById("feedback").innerHTML = "Yellow!";
+    document.getElementById("feedback").innerHTML = "Fox!";
   }
-  if (randomName === "amy") {
-    document.getElementById("feedback").innerHTML = "Pink!";
-  }
-  if (randomName === "shadow") {
-    document.getElementById("feedback").innerHTML = "Black!";
-  }
-  if (randomName === "silver") {
-    document.getElementById("feedback").innerHTML = "White!";
-  }
+  // if (randomName === "amy") {
+  //   document.getElementById("feedback").innerHTML = "Pink!";
+  // }
+  // if (randomName === "shadow") {
+  //   document.getElementById("feedback").innerHTML = "Black!";
+  // }
+  // if (randomName === "silver") {
+  //   document.getElementById("feedback").innerHTML = "White!";
+  // }
   if (randomName === "eggman") {
-    document.getElementById("feedback").innerHTML = "Bald with a Mustache!";
+    document.getElementById("feedback").innerHTML = "Human!";
   }
   if (randomName === "rouge") {
-    document.getElementById("feedback").innerHTML = "White and Pink!";
+    document.getElementById("feedback").innerHTML = "Bat!";
   }
   if (randomName === "blaze") {
-    document.getElementById("feedback").innerHTML = "Purple!";
+    document.getElementById("feedback").innerHTML = "Cat!";
   }
   if (randomName === "cream") {
     document.getElementById("feedback").innerHTML = "Rabbit!";
